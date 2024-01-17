@@ -1,0 +1,39 @@
+CRITICAL - 2022-05-20 04:07:40 --> syntax error, unexpected '$data' (T_VARIABLE)
+#0 /home/customer/www/regalamilaluna.it/public_html/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('party/register')
+#1 /home/customer/www/regalamilaluna.it/public_html/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle('party/register')
+#2 /home/customer/www/regalamilaluna.it/public_html/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /home/customer/www/regalamilaluna.it/public_html/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/customer/www/regalamilaluna.it/public_html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-20 23:22:41 --> Argument 1 passed to CodeIgniter\Security\Security::derandomize() must be of the type string, null given, called in /home/customer/www/regalamilaluna.it/public_html/system/Security/Security.php on line 284
+#0 /home/customer/www/regalamilaluna.it/public_html/system/Security/Security.php(284): CodeIgniter\Security\Security->derandomize(NULL)
+#1 /home/customer/www/regalamilaluna.it/public_html/system/Filters/CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 /home/customer/www/regalamilaluna.it/public_html/system/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 /home/customer/www/regalamilaluna.it/public_html/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/', 'before')
+#4 /home/customer/www/regalamilaluna.it/public_html/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/customer/www/regalamilaluna.it/public_html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-20 23:22:42 --> Argument 1 passed to CodeIgniter\Security\Security::derandomize() must be of the type string, null given, called in /home/customer/www/regalamilaluna.it/public_html/system/Security/Security.php on line 284
+#0 /home/customer/www/regalamilaluna.it/public_html/system/Security/Security.php(284): CodeIgniter\Security\Security->derandomize(NULL)
+#1 /home/customer/www/regalamilaluna.it/public_html/system/Filters/CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 /home/customer/www/regalamilaluna.it/public_html/system/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 /home/customer/www/regalamilaluna.it/public_html/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('core/.env', 'before')
+#4 /home/customer/www/regalamilaluna.it/public_html/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/customer/www/regalamilaluna.it/public_html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-20 23:22:43 --> Argument 1 passed to CodeIgniter\Security\Security::derandomize() must be of the type string, null given, called in /home/customer/www/regalamilaluna.it/public_html/system/Security/Security.php on line 284
+#0 /home/customer/www/regalamilaluna.it/public_html/system/Security/Security.php(284): CodeIgniter\Security\Security->derandomize(NULL)
+#1 /home/customer/www/regalamilaluna.it/public_html/system/Filters/CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 /home/customer/www/regalamilaluna.it/public_html/system/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 /home/customer/www/regalamilaluna.it/public_html/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/', 'before')
+#4 /home/customer/www/regalamilaluna.it/public_html/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/customer/www/regalamilaluna.it/public_html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-20 23:22:45 --> Argument 1 passed to CodeIgniter\Security\Security::derandomize() must be of the type string, null given, called in /home/customer/www/regalamilaluna.it/public_html/system/Security/Security.php on line 284
+#0 /home/customer/www/regalamilaluna.it/public_html/system/Security/Security.php(284): CodeIgniter\Security\Security->derandomize(NULL)
+#1 /home/customer/www/regalamilaluna.it/public_html/system/Filters/CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 /home/customer/www/regalamilaluna.it/public_html/system/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 /home/customer/www/regalamilaluna.it/public_html/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('core/.env', 'before')
+#4 /home/customer/www/regalamilaluna.it/public_html/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/customer/www/regalamilaluna.it/public_html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

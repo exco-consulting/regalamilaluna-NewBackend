@@ -1,0 +1,5 @@
+CRITICAL - 2022-06-10 03:19:19 --> Call to undefined method CodeIgniter\HTTP\ContentSecurityPolicy::enabled()
+#0 /home/customer/www/regalamilaluna.it/public_html/system/CodeIgniter.php(198): CodeIgniter\CodeIgniter->initializeKint()
+#1 /home/customer/www/regalamilaluna.it/public_html/system/bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#2 /home/customer/www/regalamilaluna.it/public_html/public/index.php(26): require('/home/customer/...')
+#3 {main}

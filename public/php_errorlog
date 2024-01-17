@@ -1,0 +1,6 @@
+[17-Jan-2024 03:35:56 CST6CDT] PHP Fatal error:  Uncaught Error: Undefined constant "CodeIgniter\ENVIRONMENT" in /home/customer/www/regalamilaluna.it/public_html/system/CodeIgniter.php:595
+Stack trace:
+#0 /home/customer/www/regalamilaluna.it/public_html/system/CodeIgniter.php(207): CodeIgniter\CodeIgniter->bootstrapEnvironment()
+#1 /home/customer/www/regalamilaluna.it/public_html/public/index.php(55): CodeIgniter\CodeIgniter->initialize()
+#2 {main}
+  thrown in /home/customer/www/regalamilaluna.it/public_html/system/CodeIgniter.php on line 595

@@ -1,0 +1,1373 @@
+*   Trying 35.214.153.2:443...
+* TCP_NODELAY set
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Dec 22 20:05:39 2022 GMT
+*  expire date: Mar 22 20:05:38 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x7f139405f160)
+> GET /content/items/party?filter=%7B%22email%22%3A%22xcK6_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D HTTP/2
+Host: cockpit.regalamilaluna.it
+Accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+Content-Type: application/json
+
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Tue, 31 Jan 2023 15:03:20 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=41eb172ea78e74e61c2ec23295e69e59; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitems%2Fparty%3Ffilter%3D%257B%2522email%2522%253A%2522xcK6_generic_bf571c65_regalamilaluna.it%2540data-backup-store.com%2522%257D
+< x-httpd-modphp: 1
+< host-header: 6b7412fb82ca5edfd0917e3957f05d89
+< x-proxy-cache: MISS
+< x-proxy-cache-info: 0302 NC:000000 UP:SKIP_CACHE_NO_CACHE
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* TCP_NODELAY set
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Dec 22 20:05:39 2022 GMT
+*  expire date: Mar 22 20:05:38 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x7f139419fa70)
+> POST /content/item/party HTTP/2
+Host: cockpit.regalamilaluna.it
+Accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+Content-Type: application/json
+Content-Length: 177
+
+* old SSL session ID is stale, removing
+* We are completely uploaded and fine
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Tue, 31 Jan 2023 15:03:20 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=a2dd303f28314cdd407b370a3e2ec1c4; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitem%2Fparty
+< x-httpd-modphp: 1
+< host-header: 8441280b0c35cbc1147f8ba998a563a7
+< x-proxy-cache-info: DT:1
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* TCP_NODELAY set
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Dec 22 20:05:39 2022 GMT
+*  expire date: Mar 22 20:05:38 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x7f77b405f1e0)
+> GET /content/items/party?filter=%7B%22email%22%3A%22w2u2_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D HTTP/2
+Host: cockpit.regalamilaluna.it
+Accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+Content-Type: application/json
+
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Tue, 31 Jan 2023 23:05:17 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=2fde31a0fb4764485cb9412947006776; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitems%2Fparty%3Ffilter%3D%257B%2522email%2522%253A%2522w2u2_generic_bf571c65_regalamilaluna.it%2540data-backup-store.com%2522%257D
+< x-httpd-modphp: 1
+< host-header: 6b7412fb82ca5edfd0917e3957f05d89
+< x-proxy-cache: MISS
+< x-proxy-cache-info: 0302 NC:000000 UP:SKIP_CACHE_NO_CACHE
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* TCP_NODELAY set
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Dec 22 20:05:39 2022 GMT
+*  expire date: Mar 22 20:05:38 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x7f77b419faa0)
+> POST /content/item/party HTTP/2
+Host: cockpit.regalamilaluna.it
+Accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+Content-Type: application/json
+Content-Length: 177
+
+* old SSL session ID is stale, removing
+* We are completely uploaded and fine
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Tue, 31 Jan 2023 23:05:17 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=e9be58eb88c544aa2d33efc606d2ded2; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitem%2Fparty
+< x-httpd-modphp: 1
+< host-header: 8441280b0c35cbc1147f8ba998a563a7
+< x-proxy-cache-info: DT:1
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* TCP_NODELAY set
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Dec 22 20:05:39 2022 GMT
+*  expire date: Mar 22 20:05:38 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x7fe8f805f1e0)
+> GET /content/items/party?filter=%7B%22email%22%3A%22v8hG_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D HTTP/2
+Host: cockpit.regalamilaluna.it
+Accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+Content-Type: application/json
+
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Sat, 04 Feb 2023 16:49:57 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=da72defc6db9b17a34f6555376d2db37; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitems%2Fparty%3Ffilter%3D%257B%2522email%2522%253A%2522v8hG_generic_bf571c65_regalamilaluna.it%2540data-backup-store.com%2522%257D
+< x-httpd-modphp: 1
+< host-header: 6b7412fb82ca5edfd0917e3957f05d89
+< x-proxy-cache: MISS
+< x-proxy-cache-info: 0302 NC:000000 UP:SKIP_CACHE_NO_CACHE
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* TCP_NODELAY set
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Dec 22 20:05:39 2022 GMT
+*  expire date: Mar 22 20:05:38 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x7fe8f819faa0)
+> POST /content/item/party HTTP/2
+Host: cockpit.regalamilaluna.it
+Accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+Content-Type: application/json
+Content-Length: 177
+
+* old SSL session ID is stale, removing
+* We are completely uploaded and fine
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Sat, 04 Feb 2023 16:49:57 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=560668d43460e9a8327427be12ea2209; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitem%2Fparty
+< x-httpd-modphp: 1
+< host-header: 8441280b0c35cbc1147f8ba998a563a7
+< x-proxy-cache-info: DT:1
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Feb 20 19:07:46 2023 GMT
+*  expire date: May 21 19:07:45 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: GET]
+* h2h3 [:path: /content/items/party?filter=%7B%22email%22%3A%22K1ak_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* Using Stream ID: 1 (easy handle 0x7f3aa405f250)
+> GET /content/items/party?filter=%7B%22email%22%3A%22K1ak_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Fri, 24 Feb 2023 21:48:15 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=19ab586b0e76061a6da685218966135f; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitems%2Fparty%3Ffilter%3D%257B%2522email%2522%253A%2522K1ak_generic_bf571c65_regalamilaluna.it%2540data-backup-store.com%2522%257D
+< x-httpd-modphp: 1
+< host-header: 6b7412fb82ca5edfd0917e3957f05d89
+< x-proxy-cache: MISS
+< x-proxy-cache-info: 0302 NC:000000 UP:SKIP_CACHE_NO_CACHE
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Feb 20 19:07:46 2023 GMT
+*  expire date: May 21 19:07:45 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: POST]
+* h2h3 [:path: /content/item/party]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* h2h3 [content-length: 177]
+* Using Stream ID: 1 (easy handle 0x7f3aa4139b10)
+> POST /content/item/party HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+content-length: 177
+
+* old SSL session ID is stale, removing
+* We are completely uploaded and fine
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Fri, 24 Feb 2023 21:48:15 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=3027297614aaa9eb018da120f6b28f1d; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitem%2Fparty
+< x-httpd-modphp: 1
+< host-header: 8441280b0c35cbc1147f8ba998a563a7
+< x-proxy-cache-info: DT:1
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Feb 20 19:07:46 2023 GMT
+*  expire date: May 21 19:07:45 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: GET]
+* h2h3 [:path: /content/items/party?filter=%7B%22email%22%3A%22xFRL_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* Using Stream ID: 1 (easy handle 0x7f1d8c05f250)
+> GET /content/items/party?filter=%7B%22email%22%3A%22xFRL_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Fri, 10 Mar 2023 08:59:26 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=778b7f574f87c0cb70ce894604068472; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitems%2Fparty%3Ffilter%3D%257B%2522email%2522%253A%2522xFRL_generic_bf571c65_regalamilaluna.it%2540data-backup-store.com%2522%257D
+< x-httpd-modphp: 1
+< host-header: 6b7412fb82ca5edfd0917e3957f05d89
+< x-proxy-cache: MISS
+< x-proxy-cache-info: 0302 NC:000000 UP:SKIP_CACHE_NO_CACHE
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Feb 20 19:07:46 2023 GMT
+*  expire date: May 21 19:07:45 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: POST]
+* h2h3 [:path: /content/item/party]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* h2h3 [content-length: 177]
+* Using Stream ID: 1 (easy handle 0x7f1d8c139b10)
+> POST /content/item/party HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+content-length: 177
+
+* old SSL session ID is stale, removing
+* We are completely uploaded and fine
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Fri, 10 Mar 2023 08:59:26 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=2fc618de3b24d7359b5a05c9c8c079f5; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitem%2Fparty
+< x-httpd-modphp: 1
+< host-header: 8441280b0c35cbc1147f8ba998a563a7
+< x-proxy-cache-info: DT:1
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Feb 20 19:07:46 2023 GMT
+*  expire date: May 21 19:07:45 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: GET]
+* h2h3 [:path: /content/items/party?filter=%7B%22email%22%3A%22dgTp_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* Using Stream ID: 1 (easy handle 0x7f4c4005f250)
+> GET /content/items/party?filter=%7B%22email%22%3A%22dgTp_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Sat, 15 Apr 2023 00:44:37 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=f2a5c2799348515c425d3fe7381ad435; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitems%2Fparty%3Ffilter%3D%257B%2522email%2522%253A%2522dgTp_generic_bf571c65_regalamilaluna.it%2540data-backup-store.com%2522%257D
+< x-httpd-modphp: 1
+< host-header: 6b7412fb82ca5edfd0917e3957f05d89
+< x-proxy-cache: MISS
+< x-proxy-cache-info: 0302 NC:000000 UP:SKIP_CACHE_NO_CACHE
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Feb 20 19:07:46 2023 GMT
+*  expire date: May 21 19:07:45 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: POST]
+* h2h3 [:path: /content/item/party]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* h2h3 [content-length: 177]
+* Using Stream ID: 1 (easy handle 0x7f4c40139b10)
+> POST /content/item/party HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+content-length: 177
+
+* We are completely uploaded and fine
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Sat, 15 Apr 2023 00:44:37 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=61c911bd0604ff638259d60a0c6c238b; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitem%2Fparty
+< x-httpd-modphp: 1
+< host-header: 8441280b0c35cbc1147f8ba998a563a7
+< x-proxy-cache-info: DT:1
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Apr 21 18:50:38 2023 GMT
+*  expire date: Jul 20 18:50:37 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: GET]
+* h2h3 [:path: /content/items/party?filter=%7B%22email%22%3A%223Qga_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* Using Stream ID: 1 (easy handle 0x7f746405f250)
+> GET /content/items/party?filter=%7B%22email%22%3A%223Qga_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Thu, 08 Jun 2023 01:12:43 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=e23c88b789ce33705e6ce7c514a06e6e; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitems%2Fparty%3Ffilter%3D%257B%2522email%2522%253A%25223Qga_generic_bf571c65_regalamilaluna.it%2540data-backup-store.com%2522%257D
+< x-httpd-modphp: 1
+< host-header: 6b7412fb82ca5edfd0917e3957f05d89
+< x-proxy-cache: MISS
+< x-proxy-cache-info: 0302 NC:000000 UP:SKIP_CACHE_NO_CACHE
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Apr 21 18:50:38 2023 GMT
+*  expire date: Jul 20 18:50:37 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: POST]
+* h2h3 [:path: /content/item/party]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* h2h3 [content-length: 177]
+* Using Stream ID: 1 (easy handle 0x7f7464139b10)
+> POST /content/item/party HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+content-length: 177
+
+* We are completely uploaded and fine
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Thu, 08 Jun 2023 01:12:43 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=51859bb87665167d61e27fba03f0575f; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitem%2Fparty
+< x-httpd-modphp: 1
+< host-header: 8441280b0c35cbc1147f8ba998a563a7
+< x-proxy-cache-info: DT:1
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Apr 21 18:50:38 2023 GMT
+*  expire date: Jul 20 18:50:37 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: GET]
+* h2h3 [:path: /content/items/party?filter=%7B%22email%22%3A%22Haum_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* Using Stream ID: 1 (easy handle 0x7f284405f250)
+> GET /content/items/party?filter=%7B%22email%22%3A%22Haum_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Wed, 14 Jun 2023 07:55:46 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=2fbaf93fae8d16159f2b7d5b394e2440; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitems%2Fparty%3Ffilter%3D%257B%2522email%2522%253A%2522Haum_generic_bf571c65_regalamilaluna.it%2540data-backup-store.com%2522%257D
+< x-httpd-modphp: 1
+< host-header: 6b7412fb82ca5edfd0917e3957f05d89
+< x-proxy-cache: MISS
+< x-proxy-cache-info: 0302 NC:000000 UP:SKIP_CACHE_NO_CACHE
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Apr 21 18:50:38 2023 GMT
+*  expire date: Jul 20 18:50:37 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: POST]
+* h2h3 [:path: /content/item/party]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* h2h3 [content-length: 177]
+* Using Stream ID: 1 (easy handle 0x7f2844139b10)
+> POST /content/item/party HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+content-length: 177
+
+* We are completely uploaded and fine
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Wed, 14 Jun 2023 07:55:46 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=cd5ef5a0a02e570df33cd4bf52c9f276; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitem%2Fparty
+< x-httpd-modphp: 1
+< host-header: 8441280b0c35cbc1147f8ba998a563a7
+< x-proxy-cache-info: DT:1
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Jun 20 18:12:20 2023 GMT
+*  expire date: Sep 18 18:12:19 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: GET]
+* h2h3 [:path: /content/items/party?filter=%7B%22email%22%3A%22oD3V_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* Using Stream ID: 1 (easy handle 0x7fd79805f290)
+> GET /content/items/party?filter=%7B%22email%22%3A%22oD3V_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Tue, 25 Jul 2023 17:42:15 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=4fd8a1dfb8ab170ad1b0a53c58fb0230; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitems%2Fparty%3Ffilter%3D%257B%2522email%2522%253A%2522oD3V_generic_bf571c65_regalamilaluna.it%2540data-backup-store.com%2522%257D
+< x-httpd-modphp: 1
+< host-header: 6b7412fb82ca5edfd0917e3957f05d89
+< x-proxy-cache: MISS
+< x-proxy-cache-info: 0302 NC:000000 UP:SKIP_CACHE_NO_CACHE
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Jun 20 18:12:20 2023 GMT
+*  expire date: Sep 18 18:12:19 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: POST]
+* h2h3 [:path: /content/item/party]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* h2h3 [content-length: 177]
+* Using Stream ID: 1 (easy handle 0x7fd79821b5d0)
+> POST /content/item/party HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+content-length: 177
+
+* old SSL session ID is stale, removing
+* We are completely uploaded and fine
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Tue, 25 Jul 2023 17:42:15 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=eecaf3895670814ecec4560b40f1864d; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitem%2Fparty
+< x-httpd-modphp: 1
+< host-header: 8441280b0c35cbc1147f8ba998a563a7
+< x-proxy-cache-info: DT:1
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Jun 20 18:12:20 2023 GMT
+*  expire date: Sep 18 18:12:19 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: GET]
+* h2h3 [:path: /content/items/party?filter=%7B%22email%22%3A%22tGKj_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* Using Stream ID: 1 (easy handle 0x7f7fe405f250)
+> GET /content/items/party?filter=%7B%22email%22%3A%22tGKj_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Sat, 29 Jul 2023 16:25:15 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=75978bb13e5afddb2b6add7f0324a5de; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitems%2Fparty%3Ffilter%3D%257B%2522email%2522%253A%2522tGKj_generic_bf571c65_regalamilaluna.it%2540data-backup-store.com%2522%257D
+< x-httpd-modphp: 1
+< host-header: 6b7412fb82ca5edfd0917e3957f05d89
+< x-proxy-cache: MISS
+< x-proxy-cache-info: 0302 NC:000000 UP:SKIP_CACHE_NO_CACHE
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Jun 20 18:12:20 2023 GMT
+*  expire date: Sep 18 18:12:19 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: POST]
+* h2h3 [:path: /content/item/party]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* h2h3 [content-length: 177]
+* Using Stream ID: 1 (easy handle 0x7f7fe4139b10)
+> POST /content/item/party HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+content-length: 177
+
+* old SSL session ID is stale, removing
+* We are completely uploaded and fine
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Sat, 29 Jul 2023 16:25:15 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=c7203754d92c32985db0846f14d681e3; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitem%2Fparty
+< x-httpd-modphp: 1
+< host-header: 8441280b0c35cbc1147f8ba998a563a7
+< x-proxy-cache-info: DT:1
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Jun 20 18:12:20 2023 GMT
+*  expire date: Sep 18 18:12:19 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: GET]
+* h2h3 [:path: /content/items/party?filter=%7B%22email%22%3A%22GnJg_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* Using Stream ID: 1 (easy handle 0x7fa0c805f250)
+> GET /content/items/party?filter=%7B%22email%22%3A%22GnJg_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Mon, 31 Jul 2023 22:42:17 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=dde99595152bce88e3f33632b98347de; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitems%2Fparty%3Ffilter%3D%257B%2522email%2522%253A%2522GnJg_generic_bf571c65_regalamilaluna.it%2540data-backup-store.com%2522%257D
+< x-httpd-modphp: 1
+< host-header: 6b7412fb82ca5edfd0917e3957f05d89
+< x-proxy-cache: MISS
+< x-proxy-cache-info: 0302 NC:000000 UP:SKIP_CACHE_NO_CACHE
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Jun 20 18:12:20 2023 GMT
+*  expire date: Sep 18 18:12:19 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: POST]
+* h2h3 [:path: /content/item/party]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* h2h3 [content-length: 177]
+* Using Stream ID: 1 (easy handle 0x7fa0c8139b10)
+> POST /content/item/party HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+content-length: 177
+
+* We are completely uploaded and fine
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Mon, 31 Jul 2023 22:42:17 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=c449929ac07fbd4ca67025af9ebc908c; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitem%2Fparty
+< x-httpd-modphp: 1
+< host-header: 8441280b0c35cbc1147f8ba998a563a7
+< x-proxy-cache-info: DT:1
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Aug 19 17:36:37 2023 GMT
+*  expire date: Nov 17 17:36:36 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: GET]
+* h2h3 [:path: /content/items/party?filter=%7B%22email%22%3A%22hOTK_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* Using Stream ID: 1 (easy handle 0x7f434c05f260)
+> GET /content/items/party?filter=%7B%22email%22%3A%22hOTK_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Mon, 25 Sep 2023 06:56:04 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=d0a43b00a333fe973f206c322244f50f; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitems%2Fparty%3Ffilter%3D%257B%2522email%2522%253A%2522hOTK_generic_bf571c65_regalamilaluna.it%2540data-backup-store.com%2522%257D
+< x-httpd-modphp: 1
+< host-header: 6b7412fb82ca5edfd0917e3957f05d89
+< x-proxy-cache: MISS
+< x-proxy-cache-info: 0302 NC:000000 UP:SKIP_CACHE_NO_CACHE
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Aug 19 17:36:37 2023 GMT
+*  expire date: Nov 17 17:36:36 2023 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: POST]
+* h2h3 [:path: /content/item/party]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* h2h3 [content-length: 177]
+* Using Stream ID: 1 (easy handle 0x7f434c139b30)
+> POST /content/item/party HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+content-length: 177
+
+* old SSL session ID is stale, removing
+* We are completely uploaded and fine
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Mon, 25 Sep 2023 06:56:04 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=7ad3f1de602ab8b4a2fd770915a008ef; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitem%2Fparty
+< x-httpd-modphp: 1
+< host-header: 8441280b0c35cbc1147f8ba998a563a7
+< x-proxy-cache-info: DT:1
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Oct 18 16:50:37 2023 GMT
+*  expire date: Jan 16 16:50:36 2024 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: GET]
+* h2h3 [:path: /content/items/party?filter=%7B%22email%22%3A%22pippopluto%40yopmail.com%22%7D]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* Using Stream ID: 1 (easy handle 0x7f63fc06c360)
+> GET /content/items/party?filter=%7B%22email%22%3A%22pippopluto%40yopmail.com%22%7D HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Fri, 03 Nov 2023 20:48:53 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=3d0e01385010c25ff43364b2d2e9b1ba; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitems%2Fparty%3Ffilter%3D%257B%2522email%2522%253A%2522pippopluto%2540yopmail.com%2522%257D
+< x-httpd-modphp: 1
+< host-header: 6b7412fb82ca5edfd0917e3957f05d89
+< x-proxy-cache: MISS
+< x-proxy-cache-info: 0302 NC:000000 UP:SKIP_CACHE_SET_COOKIE
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Oct 18 16:50:37 2023 GMT
+*  expire date: Jan 16 16:50:36 2024 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: POST]
+* h2h3 [:path: /content/item/party]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* h2h3 [content-length: 134]
+* Using Stream ID: 1 (easy handle 0x7f63fc1de7b0)
+> POST /content/item/party HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+content-length: 134
+
+* old SSL session ID is stale, removing
+* We are completely uploaded and fine
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Fri, 03 Nov 2023 20:48:53 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=a030d17dfd5a24d9bb2e7e5762d3bc6a; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitem%2Fparty
+< x-httpd-modphp: 1
+< host-header: 8441280b0c35cbc1147f8ba998a563a7
+< x-proxy-cache-info: DT:1
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Oct 18 16:50:37 2023 GMT
+*  expire date: Jan 16 16:50:36 2024 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: GET]
+* h2h3 [:path: /content/items/party?filter=%7B%22email%22%3A%22Hz97_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* Using Stream ID: 1 (easy handle 0x7fd7cc066a40)
+> GET /content/items/party?filter=%7B%22email%22%3A%22Hz97_generic_bf571c65_regalamilaluna.it%40data-backup-store.com%22%7D HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Sat, 18 Nov 2023 08:54:11 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=d5564b7f2f5dfb6abb0d2c68d90ff664; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitems%2Fparty%3Ffilter%3D%257B%2522email%2522%253A%2522Hz97_generic_bf571c65_regalamilaluna.it%2540data-backup-store.com%2522%257D
+< x-httpd-modphp: 1
+< host-header: 6b7412fb82ca5edfd0917e3957f05d89
+< x-proxy-cache: MISS
+< x-proxy-cache-info: 0302 NC:000000 UP:SKIP_CACHE_SET_COOKIE
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
+*   Trying 35.214.153.2:443...
+* Connected to cockpit.regalamilaluna.it (35.214.153.2) port 443 (#0)
+* ALPN: offers h2
+* ALPN: offers http/1.1
+*  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.cockpit.regalamilaluna.it
+*  start date: Oct 18 16:50:37 2023 GMT
+*  expire date: Jan 16 16:50:36 2024 GMT
+*  subjectAltName: host "cockpit.regalamilaluna.it" matched cert's "cockpit.regalamilaluna.it"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multiplexing
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2h3 [:method: POST]
+* h2h3 [:path: /content/item/party]
+* h2h3 [:scheme: https]
+* h2h3 [:authority: cockpit.regalamilaluna.it]
+* h2h3 [accept: */*]
+* h2h3 [api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406]
+* h2h3 [content-type: application/json]
+* h2h3 [content-length: 177]
+* Using Stream ID: 1 (easy handle 0x7fd7cc21d190)
+> POST /content/item/party HTTP/2
+Host: cockpit.regalamilaluna.it
+accept: */*
+api-key: API-d0914b8fdf88ceb40ddf29b5d27af145cc348406
+content-type: application/json
+content-length: 177
+
+* old SSL session ID is stale, removing
+* We are completely uploaded and fine
+* Connection state changed (MAX_CONCURRENT_STREAMS == 128)!
+< HTTP/2 302 
+< server: nginx
+< date: Sat, 18 Nov 2023 08:54:12 GMT
+< content-type: text/html; charset=UTF-8
+< content-length: 0
+< set-cookie: a2c2f58826bb213d0550e708d34b9e36=c53ad08f63af59b133ea90497e88a7b0; path=/
+< expires: Thu, 19 Nov 1981 08:52:00 GMT
+< cache-control: no-store, no-cache, must-revalidate
+< pragma: no-cache
+< location: /auth/login?to=%2Fcontent%2Fitem%2Fparty
+< x-httpd-modphp: 1
+< host-header: 8441280b0c35cbc1147f8ba998a563a7
+< x-proxy-cache-info: DT:1
+< 
+* Connection #0 to host cockpit.regalamilaluna.it left intact
