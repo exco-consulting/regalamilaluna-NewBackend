@@ -18,3 +18,4 @@ application/logs/*
 /vendor/
 certificati/certificate.crt
 certificati/key.key
+.env
