@@ -20,3 +20,5 @@ application/logs/*
 certificati/certificate.crt
 certificati/key.key
 .env
+.nova/*
+writable/session/*
