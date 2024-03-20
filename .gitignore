@@ -22,3 +22,4 @@ certificati/key.key
 .env
 .nova/*
 writable/session/*
+writable/debugbar/*
