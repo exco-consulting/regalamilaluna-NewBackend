@@ -52,7 +52,7 @@ abstract class BaseController extends Controller
         parent::initController($request, $response, $logger);
 
         // Preload any models, libraries, etc, here.
-
+        //$this->db = \Config\Database::connect(); - not needed as DB is connected automatically in models.s
         $this->session = \Config\Services::session();
     }
 }
