@@ -4,9 +4,9 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Party extends Model
+class ListItem extends Model
 {
-	protected $table      = 'party';
+	protected $table      = 'listItem';
 	protected $primaryKey = 'id';
 
 	protected $useAutoIncrement = true;
@@ -14,7 +14,7 @@ class Party extends Model
 	protected $returnType     = 'array';
 	protected $useSoftDeletes = false;
 
-	protected $allowedFields = ['type', 'name', 'surname', 'dob', 'email', 'phone', 'identityId'];
+	protected $allowedFields = ['name', 'productId', 'listId', 'amount', 'guestId'];
 
 	protected bool $allowEmptyInserts = false;
 
