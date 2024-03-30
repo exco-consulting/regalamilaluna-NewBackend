@@ -26,8 +26,18 @@ class Party extends Model
 	//protected $deletedField  = 'deleted_at';
 
 	// Validation
-	protected $validationRules      = [];
-	protected $validationMessages   = [];
+	protected $validationRules = [
+		'email'        	=> 'required|max_length[254]|valid_email|is_unique[party.email]',
+		'name'     		=> 'required|max_length[255]',
+		'surname' 		=> 'required|max_length[255]|',
+	];
+	protected $validationMessages = [
+		'email' => [
+			'is_unique' => 'Sorry. That email has already been taken. Please choose another.',
+		],
+	];
+	
+	
 	protected $skipValidation       = false;
 	protected $cleanValidationRules = true;
 

@@ -23,19 +23,29 @@ class Party extends BaseController
     
     public function register()
     {  
-    	require __DIR__."/../../vendor/autoload.php";
-        // Connect and authenticate with your Algolia app
-        $client = SearchClient::create("GU8G9PZAQ2", "64593d95271a33faf58a47788c4a5574");
+    	$data = $this->request->getPost();
         
+        $partyModel = model('Party');
+        $partyModel->insert($data);
         
-        
-        // Create a new index and add a record
-        $index = $client->initIndex("Party_index");
-        $record = ["objectID" => 2, "name" => "test_party2"];
-        $index->saveObject($record)->wait();
-        
-        // Search the index and print the results
-        //$results = $index->search("test_record");
+        If ($partyModel->insertID == 0)
+        {
+            return $this->response->setJSON($partyModel->errors());
+            
+        } else {
+            If ($_ENV['enable_Algolia']=="true")
+            {
+                require __DIR__."/../../vendor/autoload.php";
+                // Connect and authenticate with your Algolia app
+                $client = SearchClient::create($_ENV['ApplicationID'], $_ENV['AdminKeyID']);
+                // Create a new index and add a record
+                $index = $client->initIndex("Party_index");
+                $object = $data;
+                $object['objectID'] = $partyModel->insertID;
+                $index->saveObject($object)->wait();
+            }            
+            return $this->response->setJSON($object);
+        }
     }
     
 	public function listParty()
