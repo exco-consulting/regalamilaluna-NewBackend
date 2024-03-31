@@ -14,7 +14,7 @@ class Party extends Model
 	protected $returnType     = 'array';
 	protected $useSoftDeletes = false;
 
-	protected $allowedFields = ['type', 'name', 'surname', 'dob', 'email', 'phone', 'identityId'];
+	protected $allowedFields = ['type', 'name', 'surname', 'dob', 'email', 'phone', 'identityId','status'];
 
 	protected bool $allowEmptyInserts = false;
 

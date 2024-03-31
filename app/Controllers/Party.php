@@ -16,22 +16,16 @@ class Party extends BaseController
 		
     }
     
-    public function checkDuplicationEmail($email)  /// to fix filters
-    {
-    	
-    }
-    
     public function register()
     {  
     	$data = $this->request->getPost();
         
         $partyModel = model('Party');
-        $partyModel->insert($data);
+        $partyModel->save($data);
         
         If ($partyModel->insertID == 0)
         {
             return $this->response->setJSON($partyModel->errors());
-            
         } else {
             If ($_ENV['enable_Algolia']=="true")
             {
