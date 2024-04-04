@@ -10,4 +10,4 @@ $routes->post('/party/register', 'Party::register');
 $routes->get('/party', 'Party::listParty');
 $routes->get('/party/(:num)', 'Party::getParty/$1');
 $routes->post('/party', 'Party::register');
-
+$routes->post('/party/registerConfirmation/(:num)', 'Party::registerConfirmation/$1');

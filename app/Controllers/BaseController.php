@@ -56,7 +56,7 @@ abstract class BaseController extends Controller
         // composer autoload
         //require __DIR__."/../../vendor/autoload.php";
         
-        
         $this->session = \Config\Services::session();
+
     }
 }
