@@ -13,25 +13,32 @@ class Party extends BaseController
     public function registerConfirmation($id)
     {        
         $partyModel = model('Party');
+        $myParty = $partyModel->find($id);
         
-        $myParty['id'] = $id;        
-        $myParty['status'] = 'active';
-        
-        $partyModel->save($myParty);
-        		
-        If ($_ENV['enable_Algolia']=="true")
+        if($myParty['status']=='active')
         {
-            require __DIR__."/../../vendor/autoload.php";
-            // Connect and authenticate with your Algolia app
-            $client = SearchClient::create($_ENV['ApplicationID'], $_ENV['AdminKeyID']);
-            // Create a new index and add a record
-            $index = $client->initIndex("Party_index");
-            $myParty = $partyModel->find($id);
-            $object = $myParty;
-            $object['objectID'] = $id;
-            $index->saveObject($object)->wait();
-        } 
-        return $this->response->setJSON($myParty);
+            return $this->response->setJSON($myParty);
+            
+        } else {
+                $myParty_light['id'] = $id;        
+                $myParty_light['status'] = 'active';
+    
+                $partyModel->save($myParty_light);
+        		    
+                If ($_ENV['enable_Algolia']=="true")
+                {
+                    require __DIR__."/../../vendor/autoload.php";
+                    // Connect and authenticate with your Algolia app
+                    $client = SearchClient::create($_ENV['ApplicationID'], $_ENV['AdminKeyID']);
+                    // Create a new index and add a record
+                    $index = $client->initIndex("Party_index");
+                    $myParty = $partyModel->find($id);
+                    $object = $myParty;
+                    $object['objectID'] = $id;
+                    $index->saveObject($object)->wait();
+                } 
+                return $this->response->setJSON($object);
+                }
     }
     
     public function register()
@@ -47,7 +54,7 @@ class Party extends BaseController
         } else {
             $data['ObjectId'] = $partyModel->insertID;
             $partyEmail = $data['email'];
-            $this->sendVerifyEmail($partyEmail);            
+            $this->sendVerifyEmail($partyEmail, $partyModel->insertID);            
             
             return $this->response->setJSON($data);
         }
@@ -67,12 +74,14 @@ class Party extends BaseController
         return $this->response->setJSON($parties);
     }
 	
-    private function sendVerifyEmail($emailParty)
+    private function sendVerifyEmail($emailParty, $id)
     {		
 		$email = \Config\Services::email();
         $email->setTo($emailParty);
-        $email->setSubject('Email Test');
-        $email->setMessage('Testing the email class.');
+        $email->setSubject('Validate your email');
+        
+        $validateURL = 'party/registerConfirmation/'.$id;
+        $email->setMessage(base_url($validateURL));
         
         $email->send();
     }
