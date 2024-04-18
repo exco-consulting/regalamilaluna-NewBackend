@@ -13,7 +13,12 @@
         "php": "^8.1",
         "ext-intl": "*",
         "ext-mbstring": "*",
+        "algolia/algoliasearch-client-php": "^3.4",
+        "codeigniter4/shield": "dev-develop",
         "laminas/laminas-escaper": "^2.13",
+        "mailersend/mailersend": "^0.23.0",
+        "nyholm/psr7": "^1.8",
+        "php-http/guzzle7-adapter": "^1.0",
         "psr/log": "^3.0"
     },
     "require-dev": {
@@ -58,7 +63,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     },
     "scripts": {
         "test": "phpunit"

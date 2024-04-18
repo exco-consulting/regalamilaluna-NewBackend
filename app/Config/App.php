@@ -59,7 +59,7 @@ class App extends BaseConfig
      */
     public string $uriProtocol = 'REQUEST_URI';
 
-  /*
+    /*
     |--------------------------------------------------------------------------
     | Allowed URL Characters
     |--------------------------------------------------------------------------
