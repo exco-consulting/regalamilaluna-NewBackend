@@ -5,11 +5,6 @@ namespace App\Controllers;
 require __DIR__."/../../vendor/autoload.php";
 use Algolia\AlgoliaSearch\SearchClient;
 
-use MailerSend\MailerSend;
-use MailerSend\Helpers\Builder\Variable;
-use MailerSend\Helpers\Builder\Recipient;
-use MailerSend\Helpers\Builder\EmailParams;
-
 
 class Party extends BaseController
 {    
@@ -80,28 +75,29 @@ class Party extends BaseController
 	
     private function sendVerifyEmail($emailParty, $id)
     {		
+        $validateURL = base_url('party/registerConfirmation/'.$id);
 
-        If ($_ENV['enable_Mailersender']==true)
-        {
-            $mailersend = new MailerSend();        
-            $recipients = [
-                new Recipient($emailParty, 'Your Client'),
-            ];
-            $variables = [
-                new Variable($emailParty, ['var' => 'value'])
-            ];
-            $tags = ['tag'];
-            $emailParams = (new EmailParams())
-                ->setFrom('your@trial-3zxk54vn5r6ljy6v.mlsender.net')
-                ->setFromName('Regalamilaluna.it')
-                ->setRecipients($recipients)
-                ->setSubject('Conferma email')
-                ->setTemplateId('vywj2lpdjrpl7oqz')
-                ->setVariables($variables)
-                ->setTags($tags);
-            
-            $mailersend->email->send($emailParams);
-            
+        If ($_ENV['enable_SendGrid']=="true") {
+        
+            $email = new \SendGrid\Mail\Mail(); 
+            $email->setFrom("customer@regalamilaluna.it", "Regalamilaluna.it");
+            $email->setSubject("Conferma email");
+            $email->addTo($emailParty);
+            $email->addDynamicTemplateData("validateURL",$validateURL);
+            $email->addDynamicTemplateData("email",$emailParty);
+            $email->addDynamicTemplateData("id",$id);
+
+            $email->setTemplateId("d-8b055e553fc240779ec674d0cbc19551");
+             
+            $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
+            try {
+                $response = $sendgrid->send($email);
+                //print $response->statusCode() . "\n";
+                //print_r($response->headers());
+                //print $response->body() . "\n";
+            } catch (Exception $e) {
+                echo 'Caught exception: '. $e->getMessage() ."\n";
+            }
         } else {
             $email = \Config\Services::email();
             $email->setTo($emailParty);
