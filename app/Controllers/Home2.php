@@ -26,7 +26,7 @@ class Home2 extends BaseController
         ];
         
         // Inserts data and returns inserted row's primary key
-        $party->insert($dataparty);
+        //$party->insert($dataparty);
         
         
         echo view('sections/header',$data);

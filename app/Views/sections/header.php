@@ -34,7 +34,8 @@
 	<link href="<?=base_url('css/darkmode.css')?>" rel="stylesheet">
 	
 	<link href="<?=base_url('css/gdpr-cookie.css')?>" rel="stylesheet">
-	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@8.1.0/themes/reset-min.css" integrity="sha256-2AeJLzExpZvqLUxMfcs+4DWcMwNfpnjUeAAvEtPr0wU=" crossorigin="anonymous">
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-NF2LR6MDP2"></script>
 		<script>
@@ -61,7 +62,7 @@ gtag('config', 'G-NF2LR6MDP2');
 					
 										  </a></div>
 				
-				<div class="col-lg-6 col-md-7 col-sm-5 d-none d-sm-block">
+				<div class="col-lg-5 col-md-5 col-sm-5 d-none d-sm-block">
 					<form class="form-floating">
 						<input type="search" class="form-control form-control-lg" id="floatingInputValue" placeholder="search">
 						

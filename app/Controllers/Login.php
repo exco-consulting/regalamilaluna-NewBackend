@@ -19,11 +19,6 @@ class Login extends BaseController
         return view('welcome_message');
     }
 
-    public function validateEmail()
-    {
-        return view('welcome_message');
-    }
-
     public function resetPassword()
     {
         return view('welcome_message');

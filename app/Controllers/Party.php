@@ -17,7 +17,6 @@ class Party extends BaseController
         if($myParty['status']=='active')
         {
             return $this->response->setJSON($myParty);
-            
         } else {
                 $myParty_light['id'] = $id;        
                 $myParty_light['status'] = 'active';
@@ -36,7 +35,12 @@ class Party extends BaseController
                     $object['objectID'] = $id;
                     $index->saveObject($object)->wait();
                 } 
-                return $this->response->setJSON($object);
+                
+                $this->myAccount($object);
+                
+                //return $this->response->setJSON($object);
+                
+                
                 }
     }
     
@@ -81,7 +85,7 @@ class Party extends BaseController
         
             $email = new \SendGrid\Mail\Mail(); 
             $email->setFrom("customer@regalamilaluna.it", "Regalamilaluna.it");
-            $email->setSubject("Conferma email");
+            //$email->setSubject("Conferma registrazione: clicca qui per attivare il tuo account");
             $email->addTo($emailParty);
             $email->addDynamicTemplateData("validateURL",$validateURL);
             $email->addDynamicTemplateData("email",$emailParty);
@@ -101,7 +105,7 @@ class Party extends BaseController
         } else {
             $email = \Config\Services::email();
             $email->setTo($emailParty);
-            $email->setSubject('Validate your email');
+            $email->setSubject('Conferma registrazione: clicca qui per attivare il tuo account');
             $validateURL = 'party/registerConfirmation/'.$id;
             $email->setMessage(base_url($validateURL));
             $email->send();
@@ -115,10 +119,19 @@ class Party extends BaseController
         $partyModel->save($data);
     }    
     
-    
-    public function myAccount()
+
+    public function myAccount($object)
     {
-        return view('welcome_message');
+        $object = [
+            'title'   => 'Il tuo account - Regalamilaluna.it',
+            'description' => 'My meta',
+            'keywords' => 'Lista nozze online',
+            'session' => $this->session,
+        ];
+        
+        echo view('sections/header',$object);
+        echo view('myaccount',$object);
+        echo view('sections/footer');
     }
     
     

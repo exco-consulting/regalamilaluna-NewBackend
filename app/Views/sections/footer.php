@@ -118,12 +118,37 @@
 <script src="<?=base_url('js/main.js')?>"></script>
 <script src="<?=base_url('js/progress-bar.js')?>"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.23.3/dist/algoliasearch-lite.umd.js" integrity="sha256-1QNshz86RqXe/qsCBldsUu13eAX6n/O98uubKQs87UI=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.67.0/dist/instantsearch.production.min.js" integrity="sha256-TW7D3X/i/W+RUgEeDppEnFT2ixv5lzplKH0c58D92dY=" crossorigin="anonymous"></script>
+
+
 <script>
 	//bootstrap 5 tooltip
 	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 	  return new bootstrap.Tooltip(tooltipTriggerEl)
 	})
+</script>
+
+<script>
+const searchClient = algoliasearch('GU8G9PZAQ2', '22137f58fa47187803034e5e040d1800');
+
+const search = instantsearch({
+  indexName: 'Party_index',
+  searchClient,
+});
+
+search.addWidgets([
+  instantsearch.widgets.searchBox({
+	container: '#floatingInputValue',
+  }),
+
+  instantsearch.widgets.hits({
+	container: '#hits',
+  })
+]);
+
+search.start();
 </script>
 
 <script>
