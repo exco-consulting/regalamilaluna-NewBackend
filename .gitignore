@@ -20,6 +20,7 @@ application/logs/*
 certificati/certificate.crt
 certificati/key.key
 .env
+env-prod
 .nova/*
 writable/session/*
 writable/debugbar/*
