@@ -8,41 +8,6 @@ use Algolia\AlgoliaSearch\SearchClient;
 
 class Party extends BaseController
 {    
-
-    public function registerConfirmation($id)
-    {        
-        $partyModel = model('Party');
-        $myParty = $partyModel->find($id);
-        
-        if($myParty['status']=='active')
-        {
-            return $this->response->setJSON($myParty);
-        } else {
-                $myParty_light['id'] = $id;        
-                $myParty_light['status'] = 'active';
-    
-                $partyModel->save($myParty_light);
-        		    
-                If ($_ENV['enable_Algolia']==true)
-                {
-                    require __DIR__."/../../vendor/autoload.php"; // TO FIX
-                    // Connect and authenticate with your Algolia app
-                    $client = SearchClient::create($_ENV['ApplicationID'], $_ENV['AdminKeyID']);
-                    // Create a new index and add a record
-                    $index = $client->initIndex("Party_index");
-                    $myParty = $partyModel->find($id);
-                    $object = $myParty;
-                    $object['objectID'] = $id;
-                    $index->saveObject($object)->wait();
-                } 
-                
-                $this->myAccount($object);
-                
-                //return $this->response->setJSON($object);
-                
-                
-                }
-    }
     
     public function register()
     {  
@@ -77,6 +42,12 @@ class Party extends BaseController
         return $this->response->setJSON($parties);
     }
 	
+    public function updateParty($data)
+    {		
+        $partyModel = model('Party');
+        $partyModel->save($data);
+    }  
+    
     private function sendVerifyEmail($emailParty, $id)
     {		
         $validateURL = base_url('party/registerConfirmation/'.$id);
@@ -96,9 +67,6 @@ class Party extends BaseController
             $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
             try {
                 $response = $sendgrid->send($email);
-                //print $response->statusCode() . "\n";
-                //print_r($response->headers());
-                //print $response->body() . "\n";
             } catch (Exception $e) {
                 echo 'Caught exception: '. $e->getMessage() ."\n";
             }
@@ -111,14 +79,36 @@ class Party extends BaseController
             $email->send();
         }
     }
+      
     
-
-    public function updateParty($data)
-    {		
-    	$partyModel = model('Party');
-        $partyModel->save($data);
-    }    
-    
+    public function registerConfirmation($id)
+    {        
+        $partyModel = model('Party');
+        $myParty = $partyModel->find($id);
+        
+        if($myParty['status']=='active')
+        {
+            return $this->response->setJSON($myParty);
+        } 
+        else {
+                $myParty_light['id'] = $id;        
+                $myParty_light['status'] = 'active';
+                $partyModel->save($myParty_light);
+                If ($_ENV['enable_Algolia']==true)
+                {
+                    require __DIR__."/../../vendor/autoload.php"; // TO FIX
+                    // Connect and authenticate with your Algolia app
+                    $client = SearchClient::create($_ENV['ApplicationID'], $_ENV['AdminKeyID']);
+                    // Create a new index and add a record
+                    $index = $client->initIndex("Party_index");
+                    $myParty = $partyModel->find($id);
+                    $object = $myParty;
+                    $object['objectID'] = $id;
+                    $index->saveObject($object)->wait();
+                } 
+                $this->myAccount($object);
+            }
+    }
 
     public function myAccount($object)
     {
@@ -128,11 +118,8 @@ class Party extends BaseController
             'keywords' => 'Lista nozze online',
             'session' => $this->session,
         ];
-        
         echo view('sections/header',$object);
         echo view('myaccount',$object);
         echo view('sections/footer');
-    }
-    
-    
+    } 
 }
