@@ -49,7 +49,7 @@ return array(
     'MailerSend\\' => array($vendorDir . '/mailersend/mailersend/src'),
     'Laminas\\Escaper\\' => array($vendorDir . '/laminas/laminas-escaper/src'),
     'Kint\\' => array($vendorDir . '/kint-php/kint/src'),
-    'Illuminate\\Support\\' => array($vendorDir . '/illuminate/macroable', $vendorDir . '/illuminate/collections', $vendorDir . '/illuminate/conditionable'),
+    'Illuminate\\Support\\' => array($vendorDir . '/illuminate/conditionable', $vendorDir . '/illuminate/macroable', $vendorDir . '/illuminate/collections'),
     'Illuminate\\Contracts\\' => array($vendorDir . '/illuminate/contracts'),
     'Http\\Promise\\' => array($vendorDir . '/php-http/promise/src'),
     'Http\\Message\\' => array($vendorDir . '/php-http/message/src'),
