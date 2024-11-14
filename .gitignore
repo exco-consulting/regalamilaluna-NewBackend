@@ -24,3 +24,4 @@ env-prod
 .nova/*
 writable/session/*
 writable/debugbar/*
+.DS_Store
