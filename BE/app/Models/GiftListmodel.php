@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class GiftList extends Model
+class GiftListmodel extends Model
 {
 	protected $table      = 'giftList';
 	protected $primaryKey = 'id';

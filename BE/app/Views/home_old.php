@@ -44,7 +44,7 @@
                    <div class="custom-nav" role="navigation">
                       <ul class="nav-list">
                          <li class="sbmenu">
-                            <a href="#." class="menu-links">Home</a>
+                            <a href="#." class="menu-links">Cerca</a>
                             <div class="nx-dropdown">
                                <div class="sub-menu-section">
                                   <div class="container">
@@ -114,7 +114,7 @@
                             </div>
                          </li>
                          <li class="sbmenu">
-                            <a href="#" class="menu-links">Pages</a>
+                            <a href="#" class="menu-links">Aiuto</a>
                             <div class="nx-dropdown">
                                <div class="sub-menu-section">
                                   <div class="container">
@@ -165,7 +165,7 @@
                             </div>
                          </li>
                          <li class="sbmenu">
-                            <a href="#" class="menu-links">Shortcodes</a>
+                            <a href="#" class="menu-links">Servizio Liste Regali</a>
                             <div class="nx-dropdown">
                                <div class="sub-menu-section">
                                   <div class="container">
@@ -209,7 +209,7 @@
                             </div>
                          </li>
                          <li class="sbmenu rpdropdown">
-                            <a href="#" class="menu-links">Portfolio</a>
+                            <a href="#" class="menu-links">Log in</a>
                             <div class="nx-dropdown menu-dorpdown">
                                <div class="sub-menu-section">
                                   <div class="sub-menu-center-block">
@@ -226,29 +226,12 @@
                                </div>
                             </div>
                          </li>
-                         <li class="sbmenu rpdropdown">
-                            <a href="#" class="menu-links">Blog</a>
-                            <div class="nx-dropdown menu-dorpdown">
-                               <div class="sub-menu-section">
-                                  <div class="sub-menu-center-block">
-                                     <div class="sub-menu-column smfull">
-                                        <ul>
-                                           <li><a href="blog-grid-1.html">Blog Grid 1</a> </li>
-                                           <li><a href="blog-grid-2.html">Blog Grid 2</a> </li>
-                                           <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a> </li>
-                                           <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a> </li>
-                                           <li><a href="blog-single.html">Blog Single</a></li>
-                                        </ul>
-                                     </div>
-                                  </div>
-                               </div>
-                            </div>
-                         </li>
               </ul>
               <!-- mobile + desktop - sidebar menu- dark mode witch and button -->
               <ul class="nav-list right-end-btn">                        
-              <li class="hidemobile"><a data-bs-toggle="offcanvas" href="#offcanvasExample" class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
-              <li class="hidemobile"><a href="get-quote.html" class="btn-br bg-btn3 btshad-b2 lnk">Request A Quote <span class="circle"></span></a> </li>              
+              <li class="hidemobile"><!--start Modal button -->
+                <a href="#" class="btn-main bg-btn2 lnk" data-bs-toggle="modal" data-bs-target="#modalform-full">Crea la tua lista<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+                <!--end Modal button --></li>              
               <li class="hidedesktop darkmodeswitch"><div class="switch-wrapper"> <label class="switch" for="niwax"> <input type="checkbox" id="niwax"/>  <span class="slider round"></span> </label> </div> </li> 
               <li class="hidedesktop"><a data-bs-toggle="offcanvas" href="#offcanvasExample" class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>            
               <li class="navm- hidedesktop"> <a class="toggle" href="#"><span></span></a></li>
@@ -1149,6 +1132,101 @@ specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting 
 </div>
 </footer>
 <!--End Footer-->
+
+
+
+<!--start Modal html -->
+<div class="popup-modalfull">
+  <div class="modal" id="modalform-full">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="closes abt" data-bs-dismiss="modal">&times;</button>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-8 text-center">
+                <h3 class="mb10">Popup Modal Form</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
+            </div>
+            <div class="row justify-content-center mt30">
+              <div class="col-md-9">
+                <div class="form-block fdgn2 mt10 mb10">
+                  <form action="#" method="post" name="feedback-form">
+                    <div class="fieldsets row">
+                      <div class="col-md-6"><input type="text" placeholder="Full Name" name="name"></div>
+                      <div class="col-md-6"><input type="email" placeholder="Email Address" name="email"></div>
+                    </div>
+                    <div class="fieldsets row">
+                      <div class="col-md-6 form-group">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <select   required="required" style="padding: 0px 5px;">
+                              <option value="">IN +91</option>
+                            </select>
+                          </div>
+                          <div class="col-md-8 pl5">
+                            <input type="text" name="phone"  placeholder="Phone No*" required="required">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 form-group">
+                        <select  required="required">
+                          <option value="">Interested In*</option>
+                          <option value="Graphic Design">Graphic Design</option>
+                          <option value="Web Design">Web Design</option>
+                          <option value="App Design">App Design</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="fieldsets row">
+                      <div class="col-md-6">
+                        <select required="required">
+                          <option value="">Your Budget*</option>
+                          <option value="Less than $5,000">Less than $5,000</option>
+                          <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                          <option value="$10,000 - $20,000">$10,000 - $20,000</option>
+                          <option value="$20,000 - $35,000">$20,000 - $35,000</option>
+                          <option value="$35,000 - $50,000">$35,000 - $50,000</option>
+                          <option value="$50,000 - $1,00,000">$50,000 - $1,00,000</option>
+                          <option value="$1,00,000+">$1,00,000+</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6"><input type="text" name="phone" placeholder="Skype ID/Whatsapp No." required="required"></div>
+                    </div>
+                    <div class="fieldsets row">
+                      <div class="col-md-12"><textarea placeholder="Message" name="message"></textarea></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <div class="custom-file">
+                        <input class="form-control form-control-lg" id="formFileLg" type="file">
+                        </div>
+                        <p><small>Please upload maximum 5 files Only pdf, docx and doc files.</small></p>
+                      </div>
+                    </div>
+                    <div class="fieldsets row mt30 pb20 justify-content-center">
+                      <div class="col-md-8">
+                        <button type="submit" name="submit" class="lnk btn-main bg-btn" data-bs-dismiss="modal">Submit <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end Modal html  -->
+
+
+
+
+
 <!-- js placed at the end of the document so the pages load faster -->
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="js/jquery.min.js"></script>

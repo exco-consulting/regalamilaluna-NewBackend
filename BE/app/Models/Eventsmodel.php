@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Events extends Model
+class Eventsmodel extends Model
 {
 	protected $table      = 'events';
 	protected $primaryKey = 'id';
