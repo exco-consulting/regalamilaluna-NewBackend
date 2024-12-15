@@ -6,8 +6,8 @@
 		<div class="container-fluid m-pad">
 			<div class="menu-header">
 			   <div class="dsk-logo"><a class="nav-brand" href="./">
-				  <img src="images/white-logo.png" alt="Logo" class="mega-white-logo"/>
-				  <img src="images/logo.png" alt="Logo" class="mega-darks-logo"/>
+				  <img src="<?= base_url('images/white-logo.png')?>" alt="Logo" class="mega-white-logo"/>
+				  <img src="<?= base_url('images/logo.png')?>" alt="Logo" class="mega-darks-logo"/>
 				  </a>
 			   </div>
 			   <div class="custom-nav" role="navigation">
@@ -408,25 +408,25 @@
 		  <h4>Get In Touch</h4>
 		  <p class="mt10">Please fill out the form below if you have a plan or project in mind that you'd like to share with us.</p>
 		  <div class="media mt15">
-			<div class="icondive"><img src="images/icons/call.svg" alt="icon"></div>
+			<div class="icondive"><img src="<?= base_url('images/icons/call.svg')?>" alt="icon"></div>
 			<div class="media-body getintouchinfo">
 			  <a href="tel:123456790">+91-123 4567 890 <span>Mon-Fri 9am - 6pm</span></a>
 			</div>
 		  </div>
 		  <div class="media mt15">
-			<div class="icondive"><img src="images/icons/whatsapp.svg" alt="icon"></div>
+			<div class="icondive"><img src="<?= base_url('images/icons/whatsapp.svg')?>" alt="icon"></div>
 			<div class="media-body getintouchinfo">
 			  <a href="tel:123456790">+91-123 4567 890 <span>Mon-Fri 9am - 6pm</span></a>
 			</div>
 		  </div>
 		  <div class="media mt15">
-			<div class="icondive"><img src="images/icons/mail.svg" alt="icon"></div>
+			<div class="icondive"><img src="<?= base_url('images/icons/mail.svg')?>" alt="icon"></div>
 			<div class="media-body getintouchinfo">
 			  <a href="mailto:info@website.com">info@website.com <span>Online Support</span></a>
 			</div>
 		  </div>
 		  <div class="media mt15">
-			<div class="icondive"><img src="images/icons/map.svg" alt="icon"></div>
+			<div class="icondive"><img src="<?= base_url('images/icons/map.svg')?>" alt="icon"></div>
 			<div class="media-body getintouchinfo">
 			  <a href="mailto:info@website.com">Jaipur, Rajasthan, India<span>Visit Our Office</span></a>
 			</div>

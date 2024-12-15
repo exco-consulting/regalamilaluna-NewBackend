@@ -79,11 +79,18 @@ class Party extends BaseController
 		$partyModel->update($id, $data);
 		$party = $partyModel->find($id);
 		
-		$data['party'] = $party;
 		//set session and login
+		$session = service('session');
+		
+		$newdata = [
+			'party'  => $party,
+			'partyId'     => $id,
+			'logged_in' => true,
+		];
+	
+		$session->set($newdata);
 		
 		//go to confirmation result page with link to go to myAccount - redirect
-		return redirect()->route('Myaccount');
-		//return $this->response->setJSON($party);
+		return redirect()->route('Myaccount::index',[$id]);
 	}
 }

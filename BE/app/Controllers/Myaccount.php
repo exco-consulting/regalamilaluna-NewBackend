@@ -8,7 +8,7 @@ class Myaccount extends BaseController
     {        
         return view('sections/header')
         . view('sections/menu')
-        . view('myaccount')
-        . view('sections/footer');
+        . view('myaccount');
+        //. view('sections/footer');
     }
 }
