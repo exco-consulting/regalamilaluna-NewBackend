@@ -5,7 +5,7 @@
 	<header class="nav-bg-w main-header navfix fixed-top menu-white">
 		<div class="container-fluid m-pad">
 			<div class="menu-header">
-			   <div class="dsk-logo"><a class="nav-brand" href="./">
+			   <div class="dsk-logo"><a class="nav-brand" href="<?= base_url('/')?>">
 				  <img src="<?= base_url('images/white-logo.png')?>" alt="Logo" class="mega-white-logo"/>
 				  <img src="<?= base_url('images/logo.png')?>" alt="Logo" class="mega-darks-logo"/>
 				  </a>

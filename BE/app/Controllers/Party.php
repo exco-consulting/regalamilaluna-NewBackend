@@ -10,6 +10,16 @@ class Party extends BaseController
 		$partyModel = model('Partymodel');
 		$partyId = $partyModel->insert($json);			
 		
+		//creates associated login account
+		$accModel = model('Accountmodel');
+		$accData = [
+			'partyId' => $partyId,
+			'username'    => $json->email,
+			'psw' => $json->psw,
+			'authType' => 'EMAIL',
+		];
+		$accId = $accModel->insert($accData);	
+		
 		if($partyId)
 		{
 			$email = new \SendGrid\Mail\Mail(); 

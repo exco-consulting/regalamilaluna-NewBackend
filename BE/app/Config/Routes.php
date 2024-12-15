@@ -29,5 +29,7 @@ $routes->get('party/confirm/(:num)', 'Party::confirm/$1');
 //$routes->post('events/activate', 'Events::activate');
 
 //My Account routes
-//$routes->get('myaccount/', 'Myaccount::index');
 $routes->get('myaccount/(:num)', 'Myaccount::index/$1');
+
+//LOGIN
+$routes->get('login/', 'Login::index');

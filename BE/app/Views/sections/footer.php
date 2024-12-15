@@ -4,7 +4,7 @@
 		<div class="container">
 		  <div class="row justify-content-between">
 			<div class="col-lg-3 col-sm-6  ftr-brand-pp">
-			  <a class="navbar-brand mt30 mb25" href="#"> <img src="images/logo.png" alt="Logo" width="100" /></a>
+			  <a class="navbar-brand mt30 mb25" href="#"> <img src="<?= base_url('images/logo.png')?>" alt="Logo" width="100" /></a>
 			  <p>News letter dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Enter your email</p>
 			  <a href="#" class="btn-main bg-btn3 lnk mt20">Become Partner <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
 			</div>
@@ -39,14 +39,14 @@
 			<div class="col-lg-4 col-sm-6 footer-blog-">
 			  <h5>Latest Blogs</h5>
 			  <div class="single-blog-">
-				<div class="post-thumb"><a href="#"><img src="images/blog/blog-small.jpg" alt="blog"></a></div>
+				<div class="post-thumb"><a href="#"><img src="<?= base_url('images/blog/blog-small.jpg')?>" alt="blog"></a></div>
 				<div class="content">
 				  <p class="post-meta"><span class="post-date"><i class="far fa-clock"></i>April 15, 2020</span></p>
 				  <h4 class="title"><a href="blog-sngle.html">We Provide you Best &amp; Creative Consulting Service</a></h4>
 				</div>
 			  </div>
 			  <div class="single-blog-">
-				<div class="post-thumb"><a href="#"><img src="images/blog/blog-small.jpg" alt="blog"></a></div>
+				<div class="post-thumb"><a href="#"><img src="<?= base_url('images/blog/blog-small.jpg')?>" alt="blog"></a></div>
 				<div class="content">
 				  <p class="post-meta"><span class="post-date"><i class="far fa-clock"></i>April 15, 2020</span></p>
 				  <h4 class="title"><a href="blog-sngle.html">We Provide you Best &amp; Creative Consulting Service</a></h4>
@@ -65,10 +65,10 @@
 			</div>
 			<div class="col-lg-8 v-center">
 			  <ul class="footer-badges-">
-				<li><a href="#"><img src="images/about/badges-a.png" alt="badges"></a></li>
-				<li><a href="#"><img src="images/about/badges-b.png" alt="badges"></a></li>
-				<li><a href="#"><img src="images/about/badges-c.png" alt="badges"></a></li>
-				<li><a href="#"><img src="images/about/badges-d.png" alt="badges"></a></li>
+				<li><a href="#"><img src="<?= base_url('images/about/badges-a.png')?>" alt="badges"></a></li>
+				<li><a href="#"><img src="<?= base_url('images/about/badges-b.png')?>" alt="badges"></a></li>
+				<li><a href="#"><img src="<?= base_url('images/about/badges-c.png')?>" alt="badges"></a></li>
+				<li><a href="#"><img src="<?= base_url('images/about/badges-d.png')?>" alt="badges"></a></li>
 			  </ul>
 			</div>
 		  </div>
@@ -101,11 +101,11 @@
 	</footer>
 	<!--End Footer-->
 	<!-- js placed at the end of the document so the pages load faster -->
-	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.bundle.min.js"></script> 
-	<script src="js/plugin.min.js"></script>
+	<script src="<?= base_url('js/vendor/modernizr-3.5.0.min.js')?>"></script>
+	<script src="<?= base_url('js/jquery.min.js')?>"></script>
+	<script src="<?= base_url('js/bootstrap.bundle.min.js')?>"></script> 
+	<script src="<?= base_url('js/plugin.min.js')?>"></script>
 	<!--common script file-->
-	<script src="js/main.js"></script>
+	<script src="<?= base_url('js/main.js')?>"></script>
   </body>
 </html>
