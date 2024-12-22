@@ -25,7 +25,7 @@ class Party extends BaseController
 			$email = new \SendGrid\Mail\Mail(); 
 			$email->setFrom("customer@regalamilaluna.it", "Regalamilaluna.it");
 			$email->addTo($json->email, $json->fullName);
-			$email->setTemplateId("d-8b055e553fc240779ec674d0cbc19551");
+			$email->setTemplateId("d-42147140a96043cd9c5363c3ae07faa3");
 			$email->addDynamicTemplateDatas( [
 			  'fullName'     => $json->fullName,
 			  'validateURL' => base_url('party/confirm/').$partyId
@@ -54,7 +54,6 @@ class Party extends BaseController
 		{
 			return $this->response->setJSON($partyModel->errors());
 		}	
-		
 	}
 	
 	public function update($id)

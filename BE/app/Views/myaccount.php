@@ -12,7 +12,7 @@
               </ul>
             </div>
             <div class="bread-title">
-              <h2>Il tuo Account</h2>
+              <h2>Il tuo Account - <?= esc($party->fullName)  ?></h2>
             </div>
           </div>
         </div>

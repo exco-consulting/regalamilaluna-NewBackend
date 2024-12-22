@@ -546,34 +546,26 @@
 						<div class="row justify-content-center mt30">
 							<div class="col-md-9">
 								<div class="form-block fdgn2 mt10 mb10">
-									<form action="#" method="post" name="feedback-form">
+									<form name="partyForm">
 										<div class="fieldsets row">
-											<div class="col-md-6"><input type="text" placeholder="Full Name" name="name"></div>
-											<div class="col-md-6"><input type="email" placeholder="Email Address" name="email"></div>
-										</div>
-										<div class="fieldsets row">
-											<div class="col-md-6 form-group">
+											<div class="col-md-12 form-group">
 												<div class="row no-gutters">
-													<div class="col-md-4">
-														<select required="required" style="padding: 0px 5px;">
-															<option value="">IN +91</option>
+													<div class="col-md-3">
+														<select name="type" required="required" style="padding: 0px 5px;">
+															<option value="Individual">Individual</option>
 														</select>
 													</div>
-													<div class="col-md-8 pl5">
-														<input type="text" name="phone" placeholder="Phone No*" required="required">
+													<div class="col-md-9 pl5">
+														<input type="text" placeholder="Full Name" name="fullName" required="required">
 													</div>
 												</div>
 											</div>
-											<div class="col-md-6 form-group">
-												<select required="required">
-													<option value="">Interested In*</option>
-													<option value="Graphic Design">Graphic Design</option>
-													<option value="Web Design">Web Design</option>
-													<option value="App Design">App Design</option>
-													<option value="Other">Other</option>
-												</select>
-											</div>
 										</div>
+										<div class="fieldsets row">
+											<div class="col-md-6"><input type="email" placeholder="Email Address" name="email"></div>
+											<div class="col-md-6"><input type="password" placeholder="Password" name="psw"></div>
+										</div>
+										
 										<div class="fieldsets row">
 											<div class="col-md-6">
 												<select required="required">

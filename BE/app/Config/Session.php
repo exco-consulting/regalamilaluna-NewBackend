@@ -38,7 +38,7 @@ class Session extends BaseConfig
      * --------------------------------------------------------------------------
      *
      * The number of SECONDS you want the session to last.
-     * Setting to 0 (zero) means expire when the browser is closed.
+     * Setting to 0 (zero) means expire when the browser is closed. Default value 7200
      */
     public int $expiration = 7200;
 

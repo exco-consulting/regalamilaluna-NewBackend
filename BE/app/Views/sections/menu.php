@@ -201,8 +201,6 @@
 		  <li class="hidemobile"><!--start Modal button -->
 			<a href="#" class="btn-main bg-btn2 lnk" data-bs-toggle="modal" data-bs-target="#modalform-full">Crea la tua lista<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
 			<!--end Modal button --></li>              
-		  <li class="hidedesktop darkmodeswitch"><div class="switch-wrapper"> <label class="switch" for="niwax"> <input type="checkbox" id="niwax"/>  <span class="slider round"></span> </label> </div> </li> 
-		  <li class="hidedesktop"><a data-bs-toggle="offcanvas" href="#offcanvasExample" class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>            
 		  <li class="navm- hidedesktop"> <a class="toggle" href="#"><span></span></a></li>
 		</ul>
 	  </div>
