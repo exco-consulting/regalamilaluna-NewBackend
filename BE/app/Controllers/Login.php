@@ -47,7 +47,9 @@ class Login extends BaseController
 		// destroy session and go to logout/homepage
 		$session = session();   
 		$session->destroy();
+		setcookie('ci_session', '', time() - 3600, '/');
 		
+		//return true;
 		return redirect()->route('Home::index');
 	}
 	

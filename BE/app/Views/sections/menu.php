@@ -1,7 +1,4 @@
-
-
-	<!--End Preloader -->
-  <!--Start Header -->
+   <!--Start Header -->
 	<header class="nav-bg-w main-header navfix fixed-top menu-white">
 		<div class="container-fluid m-pad">
 			<div class="menu-header">
@@ -177,32 +174,39 @@
 						   </div>
 						</div>
 					 </li>
-					 <li class="sbmenu rpdropdown">
-						<a href="#" class="menu-links">Log in</a>
-						<div class="nx-dropdown menu-dorpdown">
-						   <div class="sub-menu-section">
-							  <div class="sub-menu-center-block">
-								 <div class="sub-menu-column smfull">
-									<ul>
-									   <li><a href="portfolio.html">Portfolio Grid 1</a> </li>
-									   <li><a href="portfolio-2.html">Portfolio Grid 2</a> </li>
-									   <li><a href="portfolio-block.html">Portfolio Wide Block</a> </li>
-									   <li><a href="portfolio-block-2.html">Portfolio Wide Block v2</a> </li>
-									   <li><a href="portfolio-details.html">Portfolio Details</a> </li>
-									</ul>
-								 </div>
-							  </div>
-						   </div>
-						</div>
-					 </li>
+					 <!-- If logged than shows MyAccount otherwise Login -->
+					<?php $session = session(); ?>
+					<?php if(!$session->get('logged_in')): ?>
+						  <li>
+							<a href="<?= base_url('login/')?>" class="menu-links">Login</a>
+						  </li>
+		  				  <!-- mobile + desktop - sidebar menu- dark mode witch and button -->
+						  <ul class="nav-list right-end-btn">                        
+						  <li class="hidemobile"><!--start Modal button -->
+							<a href="#" class="btn-main bg-btn2 lnk" data-bs-toggle="modal" data-bs-target="#modalform-full">Crea la tua lista<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+							<!--end Modal button --></li>              
+						  <li class="navm- hidedesktop"> <a class="toggle" href="#"><span></span></a></li>
+						</ul>
+					  <?php else: ?> 
+							<li class="contact-show">
+								<a href="<?= base_url('myaccount/')?>" class="btn-round trngl btn-br bg-btn"><i class="fas fa-solid fa-user-tie fa-lg"></i></a>
+								<div class="contact-inquiry">
+									<div class="contact-info-">
+										<div class="contct-heading">Il mio Account</div>
+										<div class="inquiry-card-nn">
+										<div class="title-inq-c"></div>
+										<ul>
+											<li><i class="fas fa-power-off"></i><a href="<?= base_url('logout/')?>" >Esci</a></li>
+											<li><i class="fas fa-envelope"></i><a href="mailto:info@businessname.com" >info@businessname.com</a></li>
+										</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+					
+					<?php endif; ?>	   
+		  
 		  </ul>
-		  <!-- mobile + desktop - sidebar menu- dark mode witch and button -->
-		  <ul class="nav-list right-end-btn">                        
-		  <li class="hidemobile"><!--start Modal button -->
-			<a href="#" class="btn-main bg-btn2 lnk" data-bs-toggle="modal" data-bs-target="#modalform-full">Crea la tua lista<i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
-			<!--end Modal button --></li>              
-		  <li class="navm- hidedesktop"> <a class="toggle" href="#"><span></span></a></li>
-		</ul>
 	  </div>
 	</div>
 
@@ -358,6 +362,10 @@
 		 </div>
 	  </header>       
 	  <!--End Header -->
+	  <div id="progress-bar"></div>
+	  
+	  
+	  
 
 	<!--Start sidebar -->    
 	<div class="niwaxofcanvas offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample">

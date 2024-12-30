@@ -14,8 +14,11 @@ $routes->get('myaccount/(:num)', 'Myaccount::index/$1');
 $routes->get('myaccount/', 'Myaccount::index');
 //LOGIN
 $routes->get('login/', 'Login::index');
+$routes->post('login/', 'Login::index');
 $routes->post('login/auth/', 'Login::auth');
 $routes->post('logout/', 'Login::logout');
+$routes->get('logout/', 'Login::logout');
+
 
 // **************** TESTING ONLY *******************
 // ******** Party routes *******

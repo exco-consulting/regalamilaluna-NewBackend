@@ -105,6 +105,8 @@
 	<script src="<?= base_url('js/jquery.min.js')?>"></script>
 	<script src="<?= base_url('js/bootstrap.bundle.min.js')?>"></script> 
 	<script src="<?= base_url('js/plugin.min.js')?>"></script>
+	<script src="<?= base_url('js/progress-bar.js')?>"></script>
+
 	<!--common script file-->
 	<script src="<?= base_url('js/main.js')?>"></script>
   </body>
